@@ -44,30 +44,32 @@ h2 > strong {
 form {
   width: 85%;
   margin: 0 auto;
+  position: relative;
 }
 
 label, input {
   width: 100%;
 }
 
-input {
+.inputForm {
   padding: 1rem;
   border: 1px solid hsl(0, 93%, 68%);
   border-radius: 30px;
-  position: relative;
 }
 
-input::placeholder {
+.inputForm::placeholder {
   color: hsla(0, 36%, 70%, 0.5);
 }
 
-input::after {
-  content: 'hi';
+#submitBtn {
   width: 20%;
   height: 100%;
+  background: url('../images/icon-arrow.svg') 50% no-repeat, linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  transform: translateY(-50%);
   border: 1px solid hsl(0, 93%, 68%);
+  border-radius: 30px;
+  cursor: pointer;
 }
