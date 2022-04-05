@@ -1,5 +1,5 @@
 html, body {
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -74,4 +74,54 @@ label, input {
   border: 1px solid hsl(0, 80%, 86%);
   border-radius: 30px;
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  #headerImage {
+    float: right;
+    content: url('../images/hero-desktop.jpg');
+    width: 40%;
+    height: 100%;
+  }
+
+  header, .introduction, form {
+    float: left;
+  }
+
+  header {
+    width: 60%;
+    padding: 0;
+  }
+
+  h2 {
+    margin: 0;
+    text-align: start;
+    font-size: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  #logo {
+    position: relative;
+    left: 20%;
+    transform: translateX(-30%);
+    padding-top: 2rem;
+  }
+
+  .introduction {
+    width: 30%;
+    margin: 0;
+    text-align: start;
+    position: relative;
+    left: 20%;
+    transform: translateX(-40%);
+    padding: 6rem 0 1rem 0;
+  }
+
+  form {
+    clear: left;
+    width: 30%;
+    position: relative;
+    left: 20%;
+    transform: translateX(-40%);
+  }
 }
